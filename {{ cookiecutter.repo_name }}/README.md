@@ -32,7 +32,7 @@ Use the `cookiecutter` command to create the template, filling in the values as 
 cookiecutter https://github.com/jsal13/cookiecutter-pytemplate.git
 ```
 
-### Use it.
+### Use it
 
 ```shell
 just env  # Get into the poetry env.
