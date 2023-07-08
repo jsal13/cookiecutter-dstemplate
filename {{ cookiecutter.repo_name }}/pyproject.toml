@@ -2,10 +2,11 @@
 name = "mlpypackage"
 version = "0.1.0"
 description = ""
-authors = ["James Salvatore <jimmy.c.salvatore@gmail.com>"]
+authors = ['{{ cookiecutter.author }} <{{ cookiecutter.email }}>']
+license = "LICENSE"
 readme = "README.md"
 packages = [
-    { include = "mlpypackage" }
+    { include = "{{ cookiecutter.project_slug }}" }
 ]
 
 [tool.poetry.dependencies]
