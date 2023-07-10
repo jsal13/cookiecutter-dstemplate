@@ -1,17 +1,34 @@
-# Welcome to MkDocs
+# {{ cookiecutter.project_slug }}
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This page serves as the homepage for {{ cookiecutter.project_slug }}.  The documentation follows the [diataxis](https://diataxis.fr/) style and is split up into four parts:
+
+- Tutorial
+- How-to Guide
+- Explanation
+- Reference Material
+
+## Quickstart
+
+1. Go to the repo root.
+2. Run `just env` to create the poetry env and go into the poetry shell.
+3. Develop while in the poetry shell.
+
+To generate docs, fill in anything you'd like in the **docs** section and run `just serve-docs`.
 
 ## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Look at the `justfile` to see the various available commands.
 
 ## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+```text
+mkdocs.yml    # The configuration file.
+docs/
+├── explanation.md
+├── how-to-guides.md
+├── index.md
+├── reference.md
+└── tutorials.md
+```
+
+TODO: Add the other parts.
