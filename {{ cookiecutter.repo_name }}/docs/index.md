@@ -2,10 +2,10 @@
 
 This page serves as the homepage for {{ cookiecutter.project_slug }}.  The documentation follows the [diataxis](https://diataxis.fr/) style and is split up into four parts:
 
-- Tutorial
-- How-to Guide
-- Explanation
-- Reference Material
+- [Tutorial](/tutorial)
+- [How-to Guide](/how-to-guides)
+- [Explanation](/explanation)
+- [Reference Material](/reference)
 
 ## Quickstart
 
