@@ -10,17 +10,26 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
+altair = "^5.0.1"
+boto3 = "^1.28.11"
+ipykernel = "^6.25.0"
+matplotlib = "^3.7.2"
+numpy = "^1.25.1"
+pandas = "^2.0.3"
 python = "^3.10"
+requests = "^2.31.0"
+sklearn = "^0.0.post7"
+statsmodels = "^0.14.0"
 
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.0.277"
 black = "^23.3.0"
 mkdocs = "^1.4.3"
+mkdocs-autorefs = "^0.4.1"
 mkdocs-material = "^9.1.18"
 mkdocstrings = "^0.22.0"
 mkdocstrings-python = "^1.1.2"
-mkdocs-autorefs = "^0.4.1"
+ruff = "^0.0.277"
 
 [build-system]
 requires = ["poetry-core"]
