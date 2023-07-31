@@ -9,6 +9,10 @@ This page serves as the homepage for {{ cookiecutter.project_slug }}.  The docum
 
 ## Quickstart
 
+In general, if there is a question of how to do something (testing, etc.), defer to [this repository](https://github.com/fmind/mlops-python-package) which was the loose inspiration for this cookiecutter.  
+
+Otherwise, to quickstart:
+
 1. Go to the repo root.
 2. Run `just env` to create the poetry env and go into the poetry shell.
 3. Develop while in the poetry shell.
