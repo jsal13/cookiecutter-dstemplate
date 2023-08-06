@@ -1,8 +1,11 @@
 from collections.abc import Generator
+from typing import Any
 
 
+# Note: See here for args, kwargs typing.
+# https://peps.python.org/pep-0484/#arbitrary-argument-lists-and-default-argument-values
 def function_with_pep484_type_annotations(
-    param1: int, param2: str, param3: str = None, *args, **kwargs
+    param1: int, param2: str, param3: str | None = None, *args: str, **kwargs: int
 ) -> bool:
     """Example function with PEP 484 type annotations.
 
@@ -13,6 +16,7 @@ def function_with_pep484_type_annotations(
             Second line of description should be indented.
         *args: Variable length argument list.
         **kwargs: Arbitrary keyword arguments.
+
     Returns:
         bool: True if successful, False otherwise.
 
@@ -35,8 +39,9 @@ def function_with_pep484_type_annotations(
             that are relevant to the interface.
         ValueError: If `param2` is equal to `param1`.
     """
-    if param1 == param2:
-        raise ValueError("param1 may not be equal to param2")
+    if str(param1) == param2:
+        err = "param1 may not be equal to param2"
+        raise ValueError(err)
     return True
 
 
@@ -61,8 +66,7 @@ def example_generator(n: int) -> Generator[int, None, None]:
         [0, 1, 2, 3]
 
     """
-    for i in range(n):
-        yield i
+    yield from range(n)
 
 
 class ExampleClass:
@@ -112,25 +116,11 @@ class ExampleClass:
         """str: Docstring *after* attribute, with type specified."""
 
     @property
-    def readonly_property(self):
+    def readonly_property(self) -> str:
         """str: Properties should be documented in their getter method."""
         return "readonly_property"
 
-    @property
-    def readwrite_property(self):
-        """list[str]: Properties with both a getter and setter
-        should only be documented in their getter method.
-
-        If the setter method contains notable behavior, it should be
-        mentioned here.
-        """
-        return ["readwrite_property"]
-
-    @readwrite_property.setter
-    def readwrite_property(self, value):
-        value
-
-    def example_method(self, param1: Any, param2: Any):
+    def example_method(self, param1: Any, param2: Any) -> bool:
         """Class methods are similar to regular functions.
 
         Note:
@@ -146,8 +136,8 @@ class ExampleClass:
         """
         return True
 
-    def __special_without_docstring__(self):
+    def __special_without_docstring__(self) -> None:
         pass
 
-    def _private_without_docstring(self):
+    def _private_without_docstring(self) -> None:
         pass
