@@ -15,5 +15,5 @@ env: poetry-install
 poetry-install:
   poetry install
 
-doctest dir:
+test:
   pytest --doctest-modules
