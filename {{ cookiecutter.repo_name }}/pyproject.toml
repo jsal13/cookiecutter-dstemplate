@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "mlpypackage"
+name = "{{ cookiecutter.project_slug }}"
 version = "0.1.0"
 description = ""
 authors = ['{{ cookiecutter.author }} <{{ cookiecutter.email }}>']
