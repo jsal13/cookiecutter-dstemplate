@@ -2,44 +2,18 @@
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-## What is this?
+## Description
 
-A quick cookie-cutter template that has linting, formatting, and testing with pytest built in.
+What is this?
 
-## How Do I Use This?
+## Quickstart
 
-### Prereqs
+How do I use this?
 
-Install [Poetry][8]:
+## Developing
 
-```shell
-pip install poetry
-```
+How do I do dev on this?
 
-Install [Cookiecutter][16]:
+## Contributing
 
-```shell
-pip install cookiecutter
-```
-
-(_Optional_) Install [Just][15].  Follow the guide for your OS in the docs.
-
-### Get the Template
-
-Use the `cookiecutter` command to create the template, filling in the values as you'd like.
-
-```shell
-cookiecutter https://github.com/jsal13/cookiecutter-pytemplate.git
-```
-
-### Use it
-
-```shell
-just env  # Get into the poetry env.
-```
-
-Then go into your IDE!
-
-[8]: <https://python-poetry.org/docs/basic-usage/> "Poetry"
-[15]: <https://github.com/casey/just> "Just"
-[16]: <https://cookiecutter.readthedocs.io/en/stable/> "Cookiecutter"
+How do I contribute to this?
