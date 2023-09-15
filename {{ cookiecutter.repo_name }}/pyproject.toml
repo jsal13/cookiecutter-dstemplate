@@ -28,7 +28,9 @@ mkdocs-material = "^9.1.18"
 mkdocstrings = "^0.22.0"
 mkdocstrings-python = "^1.1.2"
 mypy = "^1.4.1"
+pandas-stubs = "^2.0.3"
 pytest = "^7.4.0"
+types-pytz = "^2023.3"
 ruff = "^0.0.277"
 
 [build-system]
