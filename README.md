@@ -8,10 +8,9 @@ A quick cookie-cutter template that has linting, formatting, and testing with py
 
 ### Prereqs
 
-Install [Poetry][8] and [Cookiecutter][16]:
+Install [Cookiecutter][16]:
 
 ```shell
-pip install poetry
 pip install cookiecutter
 ```
 
@@ -30,11 +29,10 @@ cookiecutter ssh://git@github.com/jsal13/cookiecutter-dstemplate.git
 Go into the root of the cloned repo and run:
 
 ```shell
-just env  # Get into the poetry env.
+just env  
 ```
 
 Then go into your IDE and code some stuff up!
 
-[8]: <https://python-poetry.org/docs/basic-usage/> "Poetry"
 [15]: <https://github.com/casey/just> "Just"
 [16]: <https://cookiecutter.readthedocs.io/en/stable/> "Cookiecutter"
