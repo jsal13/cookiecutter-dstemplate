@@ -4,11 +4,9 @@ default:
   just --list
 
 venv: 
-  # Use uv package to pip install.
-  # Ref: https://github.com/astral-sh/uv?tab=readme-ov-file#highlights
-  pip install --upgrade uv \
-    && uv venv \
-    && source .venv/bin/activate \ 
+  pip install --upgrade uv
+  uv venv \
+    && source .venv/bin/activate \
     && uv pip sync requirements.txt \
     && uv pip sync requirements-dev.txt
 
