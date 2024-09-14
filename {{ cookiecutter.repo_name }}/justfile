@@ -8,10 +8,10 @@ venv:
   # Ref: https://github.com/astral-sh/uv?tab=readme-ov-file#highlights
   pip install --upgrade uv \
     && uv venv \
+    && source .venv/bin/activate \ 
     && uv pip sync requirements.txt \
-    && uv pip sync requirements-dev.txt \
-    && source .venv/bin/activate
-  
+    && uv pip sync requirements-dev.txt
+
 ds:
   uv pip sync requirements-ds.txt
 
