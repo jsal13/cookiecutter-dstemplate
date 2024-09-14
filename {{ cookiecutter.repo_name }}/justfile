@@ -12,7 +12,7 @@ venv:
 
 ds:
   source .venv/bin/activate \
-    uv pip install -r requirements-ds.txt
+    && uv pip install -r requirements-ds.txt
 
 test:
   python -m pytest --doctest-modules ./tests
