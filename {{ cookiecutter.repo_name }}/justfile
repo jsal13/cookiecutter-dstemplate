@@ -4,16 +4,16 @@ default:
   just --list
 
 venv: 
-  python -m venv .venv
   # Use uv package to pip install.
   # Ref: https://github.com/astral-sh/uv?tab=readme-ov-file#highlights
-  source .venv/bin/activate \
-    && pip install uv \
-    && uv pip install -r requirements.txt \
-    && uv pip install -r requirements-dev.txt
+  pip install --upgrade uv \
+    && uv venv \
+    && uv pip sync requirements.txt \
+    && uv pip sync requirements-dev.txt \
+    && source .venv/bin/activate
   
 ds:
-  uv pip install -r requirements-ds
+  uv pip sync requirements-ds.txt
 
 test:
   python -m pytest --doctest-modules ./tests
