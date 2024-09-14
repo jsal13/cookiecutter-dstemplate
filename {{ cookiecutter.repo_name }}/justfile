@@ -3,12 +3,6 @@ set shell := ["zsh", "-cu"]
 default:
   just --list
 
-docs-serve:
-  mkdocs serve
-
-docs-build:
-  mkdocs build
-
 venv: 
   python -m venv .venv
   # Use uv package to pip install.
