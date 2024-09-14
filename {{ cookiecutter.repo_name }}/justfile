@@ -11,6 +11,9 @@ venv:
     && pip install uv \
     && uv pip install -r requirements.txt \
     && uv pip install -r requirements-dev.txt
+  
+ds:
+  uv pip install -r requirements-ds
 
 test:
   python -m pytest --doctest-modules ./tests

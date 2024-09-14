@@ -3,16 +3,13 @@ name = "{{ cookiecutter.project_slug }}"
 version = "0.1.0"
 description = ""
 requires-python = ">=3.12"
-dynamic = ["dependencies", "optional-dependencies", "readme"]
+dynamic = ["readme"]
+
+[tool.setuptools]
+py-modules = []
 
 [tool.setuptools.dynamic]
 readme = { file = ["README.md"], content-type = "text/plain" }
-dependencies = { file = ["requirements.txt"] }
-optional-dependencies = { dev = { file = [
-    "requirements-dev.txt",
-] }, ds = { file = [
-    "requirements-ds",
-] } }
 
 [tool.pytest.ini_options]
 pythonpath = ["."]
