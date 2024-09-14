@@ -1,0 +1,13 @@
+altair
+boto3
+faker
+ipykernel
+matplotlib
+numpy
+pandas
+pandas-stubs
+polars
+requests
+scikit-learn
+statsmodels
+python-dotenv

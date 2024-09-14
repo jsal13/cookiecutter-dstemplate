@@ -1,7 +1,6 @@
 attrs
 coverage
 mypy
-pandas-stubs
 pytest-mock
 pytest
 ruff

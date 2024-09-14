@@ -8,8 +8,12 @@ dynamic = ["dependencies", "optional-dependencies"]
 requires-python = ">=3.12"
 
 [tool.setuptools.dynamic]
-dependencies = {file = ["requirements.txt"]}
-optional-dependencies = {dev = { file = ["requirements-dev.txt"] }}
+dependencies = { file = ["requirements.txt"] }
+optional-dependencies = { dev = { file = [
+    "requirements-dev.txt",
+] }, ds = { file = [
+    "requirements-ds",
+] } }
 
 [tool.pytest.ini_options]
 pythonpath = ["."]
